@@ -21,6 +21,22 @@ namespace if_elseByTakeInput
             {
                 Console.WriteLine("It is odd number");
             }
+            switch (num)
+            {
+                case 10: Console.WriteLine("It is 10"); break;
+                case 20: Console.WriteLine("It is 20"); break;
+                case 30: Console.WriteLine("It is 30"); break;
+                default: Console.WriteLine("Not 10, 20 or 30"); break;
+            }
+            for (int i = 1; i <= 10; i++)
+            {
+                Console.WriteLine(i);
+            }
+
+            //for (; ; )
+            //{
+            //    Console.WriteLine("Infinitive For Loop");
+            //}  ctrl + c is used for stop the infinitve loop
             Console.ReadLine();
         }
     }
