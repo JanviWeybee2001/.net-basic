@@ -1,0 +1,7 @@
+C:\.net\if_elseByTakeInput\if_elseByTakeInput\bin\Debug\if_elseByTakeInput.exe.config
+C:\.net\if_elseByTakeInput\if_elseByTakeInput\bin\Debug\if_elseByTakeInput.exe
+C:\.net\if_elseByTakeInput\if_elseByTakeInput\bin\Debug\if_elseByTakeInput.pdb
+C:\.net\if_elseByTakeInput\if_elseByTakeInput\obj\Debug\if_elseByTakeInput.csproj.AssemblyReference.cache
+C:\.net\if_elseByTakeInput\if_elseByTakeInput\obj\Debug\if_elseByTakeInput.csproj.CoreCompileInputs.cache
+C:\.net\if_elseByTakeInput\if_elseByTakeInput\obj\Debug\if_elseByTakeInput.exe
+C:\.net\if_elseByTakeInput\if_elseByTakeInput\obj\Debug\if_elseByTakeInput.pdb
