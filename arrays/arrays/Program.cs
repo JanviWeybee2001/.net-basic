@@ -190,6 +190,6 @@ namespace arrays
 
 //Single Dimensional Array
 //Multidimensional Array
-//Jagged Array
+//Jagged Array = array of array..
 
 //params is a keyword which is used to specify a parameter that takes variable number of arguments.
