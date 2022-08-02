@@ -32,6 +32,11 @@ namespace Objects
 
     }
 
+    public enum Months
+    {
+        Jan, Feb, Mar, Apr, May, June, July, Aug, Sep, Oct, Nov, Dec 
+    }
+
     public class Students
     {
         public string name;
@@ -42,13 +47,13 @@ namespace Objects
         // default constructor
         public Students()
         {
-            Console.Write("\n------This is CONSTRUCTOR-------");
+            Console.Write("\n------This is students CONSTRUCTOR-------");
         }
 
         // destructor
         ~Students()
         {
-            Console.Write("\n------This is DESTRUCTOR---------");
+            Console.Write("\n------This is students DESTRUCTOR---------");
             Console.ReadLine();
         }
 
@@ -62,22 +67,21 @@ namespace Objects
 
         static Students()
         {
-            Console.WriteLine("static constructor");
-            //rateOfInterest = 3.3f;
+            Console.WriteLine("static Students constructor");
+            Console.ReadLine();
         }
 
         public void Print()
         {
             Console.WriteLine(name + " " + age + " " + rateOfInterest);
+            Console.ReadLine();
         }
     }
 
     class Geeks
     {
-
         private string[] days = new string[7];
 
-        // declaring an indexer
         public string this[int index]
         {
             get
@@ -90,10 +94,73 @@ namespace Objects
                 days[index] = value;
             }
         }
+
+    }
+
+    class demo
+    {
+        public 
+            int value;
+
+        public demo()
+        {
+        }
+        public demo(int val)
+        {
+            value = val;
+        }
+
+        public void passObj(demo d)
+        {
+            Console.WriteLine(d.value);
+            Console.ReadLine();
+        }
+    }
+
+    static class Me
+    {
+        static string name;
+        static int age;
+
+        static Me()
+        {
+            Console.WriteLine("--------------I'm Me Constructor------------");
+            Console.ReadLine();
+        }
+
+        // Static class does not contain destructor.
+
+        public static (int, string) IntroOfMe(int age, string name)
+        {
+            return (age, name);
+        }
+
+        public static void helloMe()
+        {
+            Console.WriteLine("Hello Me");
+            Console.ReadLine();
+        }
     }
 
     class Program
     {
+        
+        public struct rectangle
+        {
+            int width, height;
+
+            public rectangle (int x, int y)
+            {
+                width = x;
+                height = y;
+            }
+
+            public int AreaOfRect()
+            {
+                return width * height;
+            }
+        }
+
         static void Main(string[] args)
         {
             Student s1 = new Student();
@@ -133,7 +200,33 @@ namespace Objects
             for (int i = 0; i < 7; i++)
                 Console.Write(g[i] + " ");
             Console.ReadLine();
+
+            int x = (int)Months.Jan;
+            Console.WriteLine($"January on {x}");
+
+            foreach(Months m in Enum.GetValues(typeof(Months)))
+            {
+                Console.Write(m + " ");
+            }
             Console.ReadLine();
+
+            rectangle r = new rectangle(4, 3);
+            Console.WriteLine(r.AreaOfRect());
+            Console.ReadLine();
+
+            demo d1 = new demo(7);
+            demo d2 = new demo(
+                );
+            Console.WriteLine(d1.value);
+
+            d2.passObj(d1);
+
+
+            Console.WriteLine($"Me = {Me.IntroOfMe(21, "janvi")}");
+
+            Console.ReadKey();
+            Console.ReadLine();
+
         }
     }
 }
