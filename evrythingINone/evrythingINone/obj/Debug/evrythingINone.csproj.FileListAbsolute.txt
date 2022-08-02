@@ -1,0 +1,14 @@
+C:\Users\WeyBee-N2\source\repos\evrythingINone\evrythingINone\bin\Debug\evrythingINone.exe.config
+C:\Users\WeyBee-N2\source\repos\evrythingINone\evrythingINone\bin\Debug\evrythingINone.exe
+C:\Users\WeyBee-N2\source\repos\evrythingINone\evrythingINone\bin\Debug\evrythingINone.pdb
+C:\Users\WeyBee-N2\source\repos\evrythingINone\evrythingINone\obj\Debug\evrythingINone.csproj.AssemblyReference.cache
+C:\Users\WeyBee-N2\source\repos\evrythingINone\evrythingINone\obj\Debug\evrythingINone.csproj.CoreCompileInputs.cache
+C:\Users\WeyBee-N2\source\repos\evrythingINone\evrythingINone\obj\Debug\evrythingINone.exe
+C:\Users\WeyBee-N2\source\repos\evrythingINone\evrythingINone\obj\Debug\evrythingINone.pdb
+C:\.net\evrythingINone\evrythingINone\bin\Debug\evrythingINone.exe.config
+C:\.net\evrythingINone\evrythingINone\bin\Debug\evrythingINone.exe
+C:\.net\evrythingINone\evrythingINone\bin\Debug\evrythingINone.pdb
+C:\.net\evrythingINone\evrythingINone\obj\Debug\evrythingINone.csproj.AssemblyReference.cache
+C:\.net\evrythingINone\evrythingINone\obj\Debug\evrythingINone.csproj.CoreCompileInputs.cache
+C:\.net\evrythingINone\evrythingINone\obj\Debug\evrythingINone.exe
+C:\.net\evrythingINone\evrythingINone\obj\Debug\evrythingINone.pdb
