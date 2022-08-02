@@ -1,0 +1,7 @@
+C:\.net\Objects\Objects\bin\Debug\Objects.exe.config
+C:\.net\Objects\Objects\bin\Debug\Objects.exe
+C:\.net\Objects\Objects\bin\Debug\Objects.pdb
+C:\.net\Objects\Objects\obj\Debug\Objects.csproj.AssemblyReference.cache
+C:\.net\Objects\Objects\obj\Debug\Objects.csproj.CoreCompileInputs.cache
+C:\.net\Objects\Objects\obj\Debug\Objects.exe
+C:\.net\Objects\Objects\obj\Debug\Objects.pdb

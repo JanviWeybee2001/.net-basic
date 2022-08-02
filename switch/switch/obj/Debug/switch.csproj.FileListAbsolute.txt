@@ -1,0 +1,7 @@
+C:\.net\switch\switch\bin\Debug\@switch.exe.config
+C:\.net\switch\switch\bin\Debug\@switch.exe
+C:\.net\switch\switch\bin\Debug\@switch.pdb
+C:\.net\switch\switch\obj\Debug\switch.csproj.AssemblyReference.cache
+C:\.net\switch\switch\obj\Debug\switch.csproj.CoreCompileInputs.cache
+C:\.net\switch\switch\obj\Debug\@switch.exe
+C:\.net\switch\switch\obj\Debug\@switch.pdb
