@@ -1,0 +1,7 @@
+C:\.net\OOPs\Assembly1\Assembly1\bin\Debug\Assembly1.exe.config
+C:\.net\OOPs\Assembly1\Assembly1\bin\Debug\Assembly1.exe
+C:\.net\OOPs\Assembly1\Assembly1\bin\Debug\Assembly1.pdb
+C:\.net\OOPs\Assembly1\Assembly1\obj\Debug\Assembly1.csproj.AssemblyReference.cache
+C:\.net\OOPs\Assembly1\Assembly1\obj\Debug\Assembly1.csproj.CoreCompileInputs.cache
+C:\.net\OOPs\Assembly1\Assembly1\obj\Debug\Assembly1.exe
+C:\.net\OOPs\Assembly1\Assembly1\obj\Debug\Assembly1.pdb

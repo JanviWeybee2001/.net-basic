@@ -1,0 +1,7 @@
+C:\.net\OOPs\Constructor\StaticAndPrivate\bin\Debug\StaticAndPrivate.exe.config
+C:\.net\OOPs\Constructor\StaticAndPrivate\bin\Debug\StaticAndPrivate.exe
+C:\.net\OOPs\Constructor\StaticAndPrivate\bin\Debug\StaticAndPrivate.pdb
+C:\.net\OOPs\Constructor\StaticAndPrivate\obj\Debug\StaticAndPrivate.csproj.AssemblyReference.cache
+C:\.net\OOPs\Constructor\StaticAndPrivate\obj\Debug\StaticAndPrivate.csproj.CoreCompileInputs.cache
+C:\.net\OOPs\Constructor\StaticAndPrivate\obj\Debug\StaticAndPrivate.exe
+C:\.net\OOPs\Constructor\StaticAndPrivate\obj\Debug\StaticAndPrivate.pdb
