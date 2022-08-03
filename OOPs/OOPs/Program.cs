@@ -138,6 +138,38 @@ namespace OOPs
         }
     }
 
+    class Address
+    {
+        public string city, state, country;
+
+        public Address (string city, string state, string country)
+        {
+            this.city = city;
+            this.state = state;
+            this.country = country;
+        }
+    }
+
+    class Citizen
+    {
+        public int id;
+        public string name;
+        public Address address;
+
+        public Citizen(int id, string name, Address address)
+        {
+            this.id = id;
+            this.name = name;
+            this.address = address;
+        }
+
+        public void display()
+        {
+            Console.WriteLine("id: {0}, Name: {1}, City: {2}, State: {3}, Country: {4}", id, name, address.city, address.state, address.country);
+            Console.ReadLine();
+        }
+    }
+ 
     class Program
     {
         static void Main(string[] args)
@@ -174,6 +206,10 @@ namespace OOPs
             decimal salary = emp.CalculateSalarys();
             Console.WriteLine(salary);
 
+            Address ad = new Address("Rajkot", "Gujrat", "India");
+            Citizen ct = new Citizen(1,"Janvi",ad);
+
+            ct.display();
             Console.ReadLine();
         }
     }
