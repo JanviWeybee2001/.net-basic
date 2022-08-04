@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Objects
 {
+
     public class Student
     {
         public Student()
@@ -119,9 +120,6 @@ namespace Objects
 
     static class Me
     {
-        static string name;
-        static int age;
-
         static Me()
         {
             Console.WriteLine("--------------I'm Me Constructor------------");
@@ -139,6 +137,87 @@ namespace Objects
         {
             Console.WriteLine("Hello Me");
             Console.ReadLine();
+        }
+    }
+
+    class SampleCollection<T>
+    {
+        // Declare an array to store the data elements.
+        private T[] arr = new T[100];
+
+        // Define the indexer to allow client code to use [] notation.
+        public T this[int i]
+        {
+            get { return arr[i]; }
+            set { arr[i] = value; }
+        }
+    }
+
+    // runtime poly morphism and method overriding
+    class Animal
+    {
+        public virtual void Bark()
+        {
+            Console.WriteLine("Barking..");
+        }
+    }
+
+    class Dog : Animal
+    {
+        public override void Bark()
+        {
+            Console.WriteLine(" Dog BArking..");
+        }
+    }
+
+    // ABstract class
+
+    public abstract class Shape
+    {
+        public abstract void draw();
+        public void write()
+        {
+            Console.WriteLine("It is write method...");
+        }
+    }
+
+
+    public class Rectangle : Shape
+    {
+        public override void draw()
+        {
+            Console.WriteLine("Rectagle DRawing..");
+        }
+    }
+
+    public class Circle : Shape
+    {
+        public override void draw()
+        {
+            Console.WriteLine("Circle DRawing..");
+        }
+    }
+
+    // Interface
+
+    public interface Drawable
+    {
+        void draw();
+    }
+
+    public class rect : Drawable
+    {
+        public void draw()
+        {
+            Console.WriteLine("Rectagle draw by inheritance");
+        }
+    }
+
+    public class cir : Drawable
+    {
+        public void draw()
+        {
+            Console.WriteLine("circle draw by inheritance");
         }
     }
 
@@ -163,6 +242,12 @@ namespace Objects
 
         static void Main(string[] args)
         {
+
+            //int number = 1;
+            //string number = "one";
+            // we  can't declare the same name variable with different data types.
+            //Console.Write(number+ " "+ number);
+
             Student s1 = new Student();
             s1.insert(101, "Ajeet");
             s1.display();
@@ -223,6 +308,38 @@ namespace Objects
 
 
             Console.WriteLine($"Me = {Me.IntroOfMe(21, "janvi")}");
+
+            var stringCollection = new SampleCollection<int>();
+            stringCollection[0] = 1;
+            Console.WriteLine(stringCollection[0]);
+
+
+            Animal an = new Animal();
+            an.Bark();
+
+            Dog d = new Dog();
+            d.Bark();
+
+            Animal ad = new Dog();
+            ad.Bark();
+
+            Shape s;
+
+
+            s = new Rectangle();
+            s.draw();
+            s.write();
+
+            s = new Circle();
+            s.draw();
+
+            Drawable dra;
+            dra = new rect();
+            dra.draw();
+
+            dra = new cir();
+            dra.draw();
+           
 
             Console.ReadKey();
             Console.ReadLine();
