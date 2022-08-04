@@ -25,7 +25,7 @@ public class Age
     {
         if (age < 18)
         {
-            throw (new Adultcheck("This perosn is not adult"));
+            throw new Adultcheck("This person is not adult");
         }
     }
 }
@@ -91,7 +91,7 @@ namespace ExceptionHandling
                 ag.checkAge();
                 Console.WriteLine("This person is adult");
             }
-            catch(Adultcheck e)
+            catch(Exception e)
             {
                 Console.WriteLine("\n" + e + "\n");
                 Console.WriteLine("\nCatch Completed"); // IT will executed
@@ -111,7 +111,13 @@ namespace ExceptionHandling
             }
 
             Console.WriteLine("\nAge is checked");
-           
+
+            checked
+            {
+                int val = int.MaxValue;
+                Console.WriteLine("\n\n WITH 'checked' " + val + 2);
+            }
+
             Console.ReadLine();
         }
     }
