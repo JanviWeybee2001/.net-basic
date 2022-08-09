@@ -169,7 +169,44 @@ namespace OOPs
             Console.ReadLine();
         }
     }
- 
+
+    class employees
+    {
+        public string firstName;
+        public string lastName;
+
+        public void fullName()
+        {
+            Console.WriteLine(firstName + " " + lastName);
+        }
+    }
+
+    class FullTime : employees
+    {
+        public FullTime(string fn, string ln)
+        {
+            firstName = fn;
+            lastName = ln;
+        }
+        public new void fullName()
+        {
+            Console.WriteLine(firstName + " " + lastName + " - FullTime");
+        }
+    }
+
+    class PartTime : employees
+    {
+        public PartTime(string fn, string ln)
+        {
+            firstName = fn;
+            lastName = ln;
+        }
+        public new void fullName()
+        {
+            Console.WriteLine(firstName + " " + lastName + " - PartTime");
+        }
+    }
+
     class Program
     {
         static void Main(string[] args)
@@ -210,6 +247,15 @@ namespace OOPs
             Citizen ct = new Citizen(1,"Janvi",ad);
 
             ct.display();
+
+            FullTime ft = new FullTime("Full", "Time");
+            ft.fullName(); // it return the function of FullTime
+
+            PartTime pt = new PartTime("Part", "Time");
+            pt.fullName();  // it return the function of PartTime
+            ((employees)pt).fullName();  // it return the function of perant class
+            employees e = new FullTime("E-Full", "Time");
+            e.fullName();
             Console.ReadLine();
         }
     }
