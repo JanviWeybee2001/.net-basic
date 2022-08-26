@@ -11,7 +11,9 @@ namespace ControlDemoApp
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            //Label1.Text = "a<b"; // it only print 'a'
+            Label1.Text =  "a<b"; // it only print 'a'
+                                  
+            Label1.Text = Server.HtmlEncode("a<b"); // it only print 'a'
             //In literal := same problem here it only print 'a' so, we have to do Property Encode of mode in label's property'
  
 
@@ -46,5 +48,7 @@ namespace ControlDemoApp
         {
 
         }
+
+ 
     }
 }

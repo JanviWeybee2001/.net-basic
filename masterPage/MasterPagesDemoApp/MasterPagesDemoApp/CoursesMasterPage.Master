@@ -1,0 +1,92 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="CoursesMasterPage.master.cs" Inherits="MasterPagesDemoApp.CoursesMasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <link href="StyleSheet.css" rel="stylesheet" />
+
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+        .auto-style2 {
+            height: 303px;
+        }
+        .auto-style3 {
+            width: 100%;
+            height: 100%;
+        }
+        .auto-style4 {
+            width: 192px;
+        }
+        .auto-style5 {
+            width: 55px;
+            height: 55px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            
+            <table class="auto-style1">
+                <tr>
+                    <td style="background-color: #CCFFFF; font-weight: bold;">This is Header&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <asp:Button ID="btnDemo1" runat="server" OnClick="btnDemo_Click" Text="Demo" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <asp:Label ID="lblInMaster" runat="server" Text="Label"></asp:Label>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style2">
+                        <table class="auto-style3">
+                            <tr>
+                                <td class="auto-style4" style="text-align: center; vertical-align: top; font-weight: bolder; background-color: #FF99FF;">Courses Offered<br />
+                                    <br />
+                                    <br />
+                                    <a href="<%= Page.ResolveUrl("~/Csharp.aspx")%>">Csharp</a><br />
+                                    <a href="<%= Page.ResolveUrl("~/SQLServer.aspx")%>">SQLServer</a><br />
+                                    <a href="<%= Page.ResolveUrl("~/ASPNET.aspx")%>">ASPNET</a><br />
+                                    <br />
+
+                                    <strong>
+                                    Batch Starting Date
+                                    <br />
+                                    </strong>
+
+                                    <asp:ContentPlaceHolder ID="cphStartDate" runat="server">
+                                        Not Scheduled
+                                    </asp:ContentPlaceHolder>
+
+                                    <br />
+                                    <br />
+                                    <a href="Admin/ManageCourse.aspx">ManageCourse</a>
+                                    <br />
+                                    <br />
+                                    <img alt="" class="auto-style5" src="<%= Page.ResolveUrl("~/Images/smily.jpg")%>" />
+                                    <img id="img1" alt="Happy" runat="server" class="auto-style5" src="Images/smily.jpg" />
+
+                                </td>
+                                <td style="vertical-align: top">
+                                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                                        <p id="cphSourseDetails">
+                                            Page under Construction..</p>
+                                    </asp:ContentPlaceHolder>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background-color: #CCFFFF; font-weight: bold">This is Footer</td>
+                </tr>
+            </table>
+            
+        </div>
+    </form>
+</body>
+</html>

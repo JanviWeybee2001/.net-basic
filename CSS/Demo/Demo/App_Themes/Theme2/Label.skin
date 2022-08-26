@@ -1,0 +1,14 @@
+﻿<asp:Label 
+         runat="server" 
+         BackColor="Yellow" 
+         BorderColor="#FFCC00"
+         BorderStyle="Dashed" 
+         ForeColor="#FF0066"></asp:Label>
+
+<asp:Label 
+         runat="server" 
+         SkinId="RedLabel"
+         BackColor="Blue" 
+         BorderColor="#FFCE20"
+         BorderStyle="solid" 
+         ForeColor="Pink"></asp:Label>

@@ -1,0 +1,8 @@
+﻿<asp:Button 
+    runat="server" 
+    BackColor="#AAFF00"
+    BorderColor="#336600"
+    BorderStyle="Dashed"
+    BorderWidth="3px"
+    ForeColor="#336600" 
+/>

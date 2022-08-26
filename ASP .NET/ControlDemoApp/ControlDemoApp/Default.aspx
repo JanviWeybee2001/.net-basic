@@ -10,13 +10,13 @@
     <form id="form1" runat="server">
         <div>
 
-      <%--      <asp:Literal ID="Literal1" runat="server" Mode="Encode" Text="a&lt;b"></asp:Literal>
+         <asp:Literal ID="Literal1" runat="server" Mode="Encode" Text="a&lt;b"></asp:Literal>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <asp:Label ID="Label1" runat="server" Text="a&lt;b"></asp:Label>
 &nbsp;<br />
             <br />
             <br />
-            <asp:Label ID="Label4" runat="server" Text="Single Line"></asp:Label>
+            <%--<asp:Label ID="Label4" runat="server" Text="Single Line"></asp:Label>
 &nbsp;&nbsp;&nbsp;&nbsp;
             <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
             <br />
@@ -30,8 +30,8 @@
 &nbsp;&nbsp;&nbsp;&nbsp;
             <asp:TextBox ID="TextBox3" runat="server" TextMode="Password"></asp:TextBox>
 
-       <br />
---%>
+       <br />--%>
+
 
             <br />
             <asp:Panel ID="Panel1" runat="server" DefaultButton="btnDelete">
@@ -48,7 +48,7 @@
             <br />
             <br />
 
-            <asp:Button ID="btnAdd" runat="server" Text="Add" OnCommand="btnAdd_Command" CommandName ="Add" />
+            <asp:Button ID="btnAdd" runat="server" Text="Add" OnCommand="btnAdd_Command" CommandName ="Add"/>
             <asp:Button ID="btnEdit" runat="server" Text="Edit" OnCommand="btnAdd_Command" CommandName ="Edit" />
             <asp:Button ID="btnDelete" runat="server" Text="Delete" OnCommand="btnAdd_Command" CommandName ="Delete" />
 
