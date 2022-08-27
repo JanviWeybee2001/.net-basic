@@ -28,6 +28,12 @@
             <br />
             <asp:Button ID="btnException" runat="server" OnClick="btnException_Click" Text="Throw Exception" />
             <br />
+
+            <a href="Keyboard.aspx">KeyBoard</a>
+            <br />
+             <a href="Monitor.aspx">Monitor</a> <%--see the URL--%>
+            <br />
+             <a href="Computer.aspx?Id=3">Mouse</a>  <%--see the URL--%>
             <br />
             <br />
             <br />

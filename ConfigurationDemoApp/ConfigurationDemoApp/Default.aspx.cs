@@ -11,8 +11,14 @@ namespace ConfigurationDemoApp
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            Trace.Warn("Custom", "Begin");
             Page.MetaKeywords = "asp.net,C#";
             Page.MetaDescription = "This is an asp.net site that hosts asp.net tutorials";
+            Response.Write("URL : " + Request.Url + "<br />");
+            Response.Write("Path : " + Request.Path + "<br />");
+            Response.Write("filePath : " + Request.FilePath + "<br />");
+            Response.Write("RawURL : " + Request.RawUrl + "<br />");
+            Trace.Warn("Custom", "End");
         }
 
         protected void btnSubmit_Click(object sender, EventArgs e)

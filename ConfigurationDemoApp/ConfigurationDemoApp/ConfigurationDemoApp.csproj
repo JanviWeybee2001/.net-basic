@@ -67,7 +67,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AppSetting.xml" />
+    <Content Include="Computer.aspx" />
     <Content Include="Default.aspx" />
+    <Content Include="Default2.aspx" />
     <Content Include="DefaultErrorPage.aspx" />
     <Content Include="FileNotFound.aspx" />
     <Content Include="Global.asax" />
@@ -75,12 +78,26 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Computer.aspx.cs">
+      <DependentUpon>Computer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Computer.aspx.designer.cs">
+      <DependentUpon>Computer.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default2.aspx.cs">
+      <DependentUpon>Default2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default2.aspx.designer.cs">
+      <DependentUpon>Default2.aspx</DependentUpon>
     </Compile>
     <Compile Include="DefaultErrorPage.aspx.cs">
       <DependentUpon>DefaultErrorPage.aspx</DependentUpon>

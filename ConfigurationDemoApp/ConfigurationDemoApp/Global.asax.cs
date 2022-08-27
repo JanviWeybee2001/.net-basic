@@ -22,7 +22,13 @@ namespace ConfigurationDemoApp
 
         protected void Application_BeginRequest(object sender, EventArgs e)
         {
-
+            string path = Request.Path;
+            if (path.StartsWith("/product"))
+            {
+                string[] split = path.Split('/');
+                string file = split[2].Split('.')[0];
+                Context.RewritePath("~/Computer.aspx", "", "Id=" + file);
+            }
         }
 
         protected void Application_AuthenticateRequest(object sender, EventArgs e)
